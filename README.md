@@ -124,20 +124,23 @@ The patch and documentation in this repository are original work. The firmware f
 
 ## UART Connection
 
-Locate the 4-pin through-hole footprint on the PCB near the SoC (usually silkscreened `J1` or `CN1`). The pads are **unpopulated** — solder header pins or wires directly.
+Locate the 5-pin through-hole footprint on the PCB near the SoC (usually silkscreened `J3001` ). The pads are **unpopulated** — can solder header pins or wires directly after removing blocking solder.
 
 | Pin | Signal | Connection |
 |---|---|---|
-| 1 | VCC 3.3V | **Do not connect** |
+| 1 | RX (PC → router) | → adapter TX |
 | 2 | GND | → adapter GND |
-| 3 | TX (router → PC) | → adapter RX |
-| 4 | RX (PC → router) | → adapter TX |
+| 3 | VCC 3.3V | **Do not connect** |
+| 4 | unkown | **Do not connect** |
+| 5 | TX (router → PC) | → adapter RX |
+
+
 
 **Verify with a multimeter before connecting.** With the router powered, pin 1 should read ~3.3V, pin 2 should read 0V (ground).
 
 Serial settings: **115200 baud, 8N1, no flow control.**
 
-Tested terminal software: **Tera Term** (Windows), minicom / picocom (Linux), PuTTY (Windows/Linux).
+Tested terminal software: **Tera Term** (Windows), PuTTY (Windows/Linux).
 
 ---
 

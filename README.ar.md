@@ -236,7 +236,7 @@ web
 </div>
 
 ```text
-The local IP is 192.168.254.1
+The local IP is 192.168.1.254
 Listening......
 Waiting for uploading......
 ```

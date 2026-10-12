@@ -157,10 +157,7 @@
 ---
 
 ## الخطوات بالتفصيل (Step-by-Step)
-
-### قبل ما تبدأ
-
-اسحب نسخة احتياطية كاملة للفلاشة بمبرمجة CH341A وشيل الملف ده في مكان آمن. لو حصل أي مشكلة تضمن إن الراوتر هيرجع للحياة بالملف ده.
+.
 
 ### الخطوة 1 — تجهيز الكمبيوتر
 
@@ -239,7 +236,7 @@ web
 </div>
 
 ```text
-The local IP is 192.168.1.1
+The local IP is 192.168.254.1
 Listening......
 Waiting for uploading......
 ```
@@ -255,7 +252,7 @@ Waiting for uploading......
 </div>
 
 ```text
-http://192.168.1.1/upload.html
+http://192.168.1.254/upload.html
 ```
 
 <div align="right" dir="rtl">
